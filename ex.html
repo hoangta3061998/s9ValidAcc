@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isValidAcc(str) {
+        regexp = /^[_a-z0-9]{6,}$/
+        if (regexp.test(str)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    let str1 = "123abc_";
+    let str2 = "_abc123";
+    let str3 = "______";
+    let str4 = "123456";
+    let str5 = "abcdefg";
+    let str6 = ".@";
+    let str7 = "12345";
+    let str8 = "1234_";
+    let str9 = "abcde";
+    console.log(isValidAcc(str1));
+    console.log(isValidAcc(str2));
+    console.log(isValidAcc(str3));
+    console.log(isValidAcc(str4));
+    console.log(isValidAcc(str5));
+    console.log(isValidAcc(str6));
+    console.log(isValidAcc(str7));
+    console.log(isValidAcc(str8));
+    console.log(isValidAcc(str9));
+</script>
+</body>
+</html>
